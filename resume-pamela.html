@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pamela N. - Executive Operations Manager | Lowe's Guardian Angel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --primary: #3498db;
+      --dark: #2c3e50;
+      --highlight: #f1c40f;
+      --white: #FFFFFF;
+      --gray-50: #F8FAFB;
+      --gray-100: #F1F5F4;
+      --gray-200: #E2E8E7;
+      --gray-400: #94A3A0;
+      --gray-600: #4B5E5A;
+      --gray-700: #374845;
+      --font-heading: 'Montserrat', sans-serif;
+      --font-body: 'Lato', sans-serif;
+    }
+    body { font-family: var(--font-body); background: var(--gray-50); color: var(--dark); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    .back-link { display: block; background: var(--dark); padding: 12px 40px; font-family: var(--font-heading); font-size: 14px; font-weight: 500; }
+    .back-link a { color: var(--highlight); text-decoration: none; transition: color 0.2s; }
+    .back-link a:hover { color: var(--white); }
+    .back-link a::before { content: "\2190\00a0\00a0"; }
+    header { background: var(--dark); padding: 48px 40px 52px; position: relative; overflow: hidden; }
+    header::after { content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--primary), var(--highlight)); }
+    .header-brand { font-family: var(--font-heading); font-size: 32px; font-weight: 700; color: var(--white); letter-spacing: -0.5px; margin-bottom: 4px; }
+    .header-brand span { color: var(--highlight); }
+    .header-subtitle { font-family: var(--font-body); font-size: 14px; font-weight: 400; color: var(--gray-400); text-transform: uppercase; letter-spacing: 2px; }
+    .candidate-banner { background: linear-gradient(135deg, var(--primary), #f1c40f); padding: 36px 40px; color: var(--white); }
+    .candidate-name { font-family: var(--font-heading); font-size: 28px; font-weight: 700; letter-spacing: -0.3px; margin-bottom: 6px; }
+    .candidate-title { font-size: 16px; font-weight: 400; opacity: 0.9; margin-bottom: 12px; }
+    .candidate-contact { display: flex; flex-wrap: wrap; gap: 20px; font-size: 13px; opacity: 0.85; }
+    .resume-body { max-width: 900px; margin: 0 auto; padding: 40px 40px 60px; }
+    .section { margin-bottom: 36px; }
+    .section-title { font-family: var(--font-heading); font-size: 18px; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 1.5px; padding-bottom: 10px; border-bottom: 2px solid var(--gray-200); margin-bottom: 18px; }
+    .summary-text { font-size: 15px; color: var(--gray-700); line-height: 1.75; }
+    .skills-grid { display: grid; grid-template-columns: 170px 1fr; gap: 10px 20px; font-size: 14px; }
+    .skill-label { font-weight: 600; color: var(--dark); padding: 4px 0; }
+    .skill-value { color: var(--gray-600); padding: 4px 0; line-height: 1.6; }
+    .experience-item { margin-bottom: 24px; padding-left: 20px; border-left: 3px solid var(--primary); }
+    .experience-item:last-child { margin-bottom: 0; }
+    .exp-header { margin-bottom: 8px; }
+    .exp-role { font-family: var(--font-heading); font-size: 16px; font-weight: 700; color: var(--dark); }
+    .exp-company { font-size: 14px; font-weight: 500; color: var(--primary); }
+    .exp-meta { font-size: 13px; color: var(--gray-400); margin-top: 2px; }
+    .exp-desc { font-size: 14px; color: var(--gray-600); line-height: 1.65; }
+    .exp-bullets { font-size: 14px; color: var(--gray-600); line-height: 1.65; padding-left: 20px; margin-top: 6px; }
+    .exp-bullets li { margin-bottom: 4px; }
+    .education-item, .cert-item, .lang-item { font-size: 15px; margin-bottom: 8px; }
+    .edu-degree, .cert-name { font-weight: 600; color: var(--dark); }
+    .edu-school { color: var(--primary); font-weight: 500; }
+    .edu-year { font-size: 13px; color: var(--gray-400); }
+    footer { background: var(--dark); padding: 32px 40px; text-align: center; position: relative; }
+    footer::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--highlight)); }
+    .footer-text { font-family: var(--font-heading); font-size: 14px; color: var(--gray-400); }
+    .footer-text strong { color: var(--white); }
+    .footer-text .accent { color: var(--highlight); }
+    .footer-sub { font-size: 12px; color: var(--gray-600); margin-top: 8px; }
+    @media (max-width: 640px) {
+      header, .candidate-banner, .resume-body, .back-link, footer { padding-left: 20px; padding-right: 20px; }
+      .skills-grid { grid-template-columns: 1fr; }
+      .candidate-contact { flex-direction: column; gap: 6px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="back-link"><a href="index.html">Back to All Candidates</a></div>
+  <header>
+    <div class="header-brand">Lowe's Guardian Angel<span>.</span></div>
+    <div class="header-subtitle">Candidate Resume</div>
+  </header>
+  <div class="candidate-banner">
+    <div class="candidate-name">Pamela N.</div>
+    <div class="candidate-title">Executive Operations Manager | Philippines</div>
+    <div class="candidate-contact">
+      <span>Philippines</span>
+      <span>8 yrs Executive Support experience</span>
+    </div>
+  </div>
+  <div class="resume-body">
+    <div class="section"><div class="section-title">Professional Summary</div><p class="summary-text">Results-driven Operations Manager and Executive Virtual Assistant with 5+ years of experience supporting CEOs and business owners in remote environments. Expertise in process improvement, SOP development, and workflow optimization to enhance efficiency and scalability. Highly skilled in executive support, project and operations management, and client communication, with strong proficiency across a wide range of digital tools and systems. Known for exceptional organization, attention to detail, and the ability to manage priorities independently while driving operational excellence.</p></div>
+    <div class="section"><div class="section-title">Skills &amp; Tech Stack</div><div class="skills-grid">
+    <div class="skill-label">Healthcare Operations</div>
+    <div class="skill-value">HIPAA compliance, Medical billing and coding, Insurance verification, Prior authorizations, Revenue cycle management (RCM), Patient scheduling, Pharmacy prior authorizations, Medical documentation, Medical record audits</div>
+    <div class="skill-label">Executive Support</div>
+    <div class="skill-value">Calendar management, Email management, Meeting coordination, Travel planning, Task prioritization, Executive communication, Document preparation, Administrative support</div>
+    <div class="skill-label">Operations Management</div>
+    <div class="skill-value">Process improvement, SOP development, Workflow optimization, Project management, Team leadership, Performance management, Quality control, Strategic planning</div>
+    <div class="skill-label">Financial Services</div>
+    <div class="skill-value">Investment documentation, Compliance tracking, CRM management, Data room management, Due diligence, Financial reporting, Contract management</div>
+    <div class="skill-label">Digital Tools</div>
+    <div class="skill-value">Alma, Headway, IHS, Fara Med, ZocDoc, Social media management, File management systems, Customer support platforms</div></div></div>
+    <div class="section"><div class="section-title">Work Experience</div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Executive Virtual Assistant/Project Manager</div>
+        <div class="exp-company">Imperative Healthcare Services</div>
+        <div class="exp-meta">October 2025 to February 2026</div>
+      </div>
+      <ul class="exp-bullets"><li>HIPAA-certified; ensure compliance with U.S. healthcare regulations and patient confidentiality standards</li><li>Manage medical billing and coding, including claims submission, follow-ups, and denial resolution</li><li>Perform insurance verification and prior authorizations, including Medicaid reauthorizations (OMHC, PRP)</li><li>Support revenue cycle management (RCM) by tracking claims, payments, and reimbursement timelines</li><li>Coordinate patient scheduling and manage calendars (Alma, Headway, IHS, Fara Med, ZocDoc)</li><li>Handle pharmacy prior authorizations and prescription coordination</li><li>Maintain accurate medical documentation and assist with medical record audits and release requests</li><li>Provide patient support via phone and email, addressing billing, insurance, and appointment inquiries</li><li>Conduct outreach and follow-ups to improve patient engagement and retention</li><li>Assist with case reviews, reporting, and administrative operations</li><li>Identify and implement process improvements and support SOP development</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Executive Virtual Assistant/Project Manager</div>
+        <div class="exp-company">Ragland Navarro Capital -Venture Capital Business</div>
+        <div class="exp-meta">December 2024 - August 2025</div>
+      </div>
+      <ul class="exp-bullets"><li>Gatekeep CEO and CFO inboxes, schedule meetings, and prioritize daily tasks.</li><li>Coordinate and plan for executive business trips, investor meetings, and personal travel.</li><li>Act as a conduit between executives, investors, partners, and internal team members.</li><li>Maintain investor CRM, update data rooms, and manage diligence documentation.</li><li>Draft, edit, and format documents such as NDAs, term sheets, and presentations.</li><li>Track compliance deadlines, contracts, and recurring financial obligations.</li><li>Create and establish SOPs for the business</li><li>Learn executive workflows to take ownership of recurring operational tasks.</li><li>Provide reminders, run errands virtually, and support personal life organization when needed.</li><li>Oversee and manage projects across multiple investment initiatives and portfolio companies.</li><li>Prepare and organize investment proposals, financial packets, and board documents</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Operations Manager</div>
+        <div class="exp-company">Virtual Method LLC -Start up Company</div>
+        <div class="exp-meta">April 2020 - August 2024</div>
+      </div>
+      <ul class="exp-bullets"><li>Responsible for overseeing and managing the day-to-day operational activities of Virtual Method. Ensures efficient processes, quality control, cost-effectiveness, and the achievement of operational and strategic objectives.</li><li>Operational Strategy and Project Management: Collaborate with the CEO to develop and implement operational strategies that align with the organization's overall goals and objectives.</li><li>Provide strategic Initiatives in Scaling the Business</li><li>Administrative Support: Managed calendars, scheduled appointments, and coordinated meetings for executives, ensuring seamless communication and organization.</li><li>Email and Calendar Management: Monitored, prioritized, and responded to CEO's inbox, client and team emails, maintaining inbox efficiency and timely follow-up on all communication.</li><li>Project Management: Accurately organized and monitor several ongoing projects to ensure consistency and timeliness of tasks.</li><li>Social Media Management: Updated social media profiles, scheduled and posted content, and monitored engagement to enhance the employer's digital presence.</li><li>Research and Reporting: Conducted thorough online research on various topics, gathered relevant information, and created concise, well-structured reports to aid decision-making.</li><li>File Management: Organized, maintained, and retrieved digital files and documents, ensuring a streamlined filing system for quick access.</li><li>Customer Support: Responded to customer inquiries via email and chat, providing efficient and friendly service to resolve issues and answer questions.</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Operations Manager</div>
+        <div class="exp-company">American Express Inc</div>
+        <div class="exp-meta">August 2015 - March 2022</div>
+      </div>
+      <ul class="exp-bullets"><li>Responsible for leading a team of 220 full-time employees, overseeing both critical and day-to-day decision-making to ensure smooth operational flow.</li><li>Responsible for driving key business metrics such as customer satisfaction (NPS/CSAT), value generation, average handling time, absenteeism, schedule adherence, and attrition, all of which contribute to the overall success of the business.</li><li>Core part of my role is monitoring customer servicing calls to ensure flawless execution and implementing effective call center and floor management strategies.</li><li>Prioritize maintaining high levels of employee satisfaction and morale through recognition and reward programs, and provide ongoing coaching to calling executives to help them perform at their best.</li><li>Execute apply the Performance Management Process to maximize employee performance and drive engagement, fostering a positive and productive work environment.</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Team Leader</div>
+        <div class="exp-company">JP Morgan Chase Bank N.A.</div>
+        <div class="exp-meta">January 2009 - July 2015</div>
+      </div>
+      <ul class="exp-bullets"><li>Core part of my role is monitoring customer servicing calls to ensure flawless execution and implementing effective call center and floor management strategies.</li><li>Prioritize maintaining high levels of employee satisfaction and morale through recognition and reward programs, and provide ongoing coaching to calling executives to help them perform at their best.</li><li>Execute apply the Performance Management Process to maximize employee performance and drive engagement, fostering a positive and productive work environment.</li><li>Manages 10 Financial Service Advisors that cater to customers who submits auto loan applications.</li><li>Coaches to and evaluates behavior, performance and development plans of advisors.</li><li>Acts as subject matter expert and takes escalations.</li><li>Involved in procedure management and process improvement initiatives. Prepares and complete administrative tasks including employee payroll. Investigates process and procedure gaps.</li></ul>
+    </div></div>
+    <div class="section"><div class="section-title">Education</div><p class="summary-text">Education details available upon request.</p></div>
+    <div class="section"><div class="section-title">Certifications</div>
+    <div class="cert-item"><span class="cert-name">HIPAA-certified</span></div></div>
+    
+  </div>
+  <footer>
+    <div class="footer-text">Presented by <strong>Sagan</strong> for <strong class="accent">Lowe's Guardian Angel</strong></div>
+    <div class="footer-sub">getsagan.com · Redefining Recruitment</div>
+  </footer>
+</body>
+</html>
