@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ailene A. - Executive Operations Manager | Lowe's Guardian Angel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --primary: #3498db;
+      --dark: #2c3e50;
+      --highlight: #f1c40f;
+      --white: #FFFFFF;
+      --gray-50: #F8FAFB;
+      --gray-100: #F1F5F4;
+      --gray-200: #E2E8E7;
+      --gray-400: #94A3A0;
+      --gray-600: #4B5E5A;
+      --gray-700: #374845;
+      --font-heading: 'Montserrat', sans-serif;
+      --font-body: 'Lato', sans-serif;
+    }
+    body { font-family: var(--font-body); background: var(--gray-50); color: var(--dark); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    .back-link { display: block; background: var(--dark); padding: 12px 40px; font-family: var(--font-heading); font-size: 14px; font-weight: 500; }
+    .back-link a { color: var(--highlight); text-decoration: none; transition: color 0.2s; }
+    .back-link a:hover { color: var(--white); }
+    .back-link a::before { content: "\2190\00a0\00a0"; }
+    header { background: var(--dark); padding: 48px 40px 52px; position: relative; overflow: hidden; }
+    header::after { content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--primary), var(--highlight)); }
+    .header-brand { font-family: var(--font-heading); font-size: 32px; font-weight: 700; color: var(--white); letter-spacing: -0.5px; margin-bottom: 4px; }
+    .header-brand span { color: var(--highlight); }
+    .header-subtitle { font-family: var(--font-body); font-size: 14px; font-weight: 400; color: var(--gray-400); text-transform: uppercase; letter-spacing: 2px; }
+    .candidate-banner { background: linear-gradient(135deg, var(--primary), #f1c40f); padding: 36px 40px; color: var(--white); }
+    .candidate-name { font-family: var(--font-heading); font-size: 28px; font-weight: 700; letter-spacing: -0.3px; margin-bottom: 6px; }
+    .candidate-title { font-size: 16px; font-weight: 400; opacity: 0.9; margin-bottom: 12px; }
+    .candidate-contact { display: flex; flex-wrap: wrap; gap: 20px; font-size: 13px; opacity: 0.85; }
+    .resume-body { max-width: 900px; margin: 0 auto; padding: 40px 40px 60px; }
+    .section { margin-bottom: 36px; }
+    .section-title { font-family: var(--font-heading); font-size: 18px; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 1.5px; padding-bottom: 10px; border-bottom: 2px solid var(--gray-200); margin-bottom: 18px; }
+    .summary-text { font-size: 15px; color: var(--gray-700); line-height: 1.75; }
+    .skills-grid { display: grid; grid-template-columns: 170px 1fr; gap: 10px 20px; font-size: 14px; }
+    .skill-label { font-weight: 600; color: var(--dark); padding: 4px 0; }
+    .skill-value { color: var(--gray-600); padding: 4px 0; line-height: 1.6; }
+    .experience-item { margin-bottom: 24px; padding-left: 20px; border-left: 3px solid var(--primary); }
+    .experience-item:last-child { margin-bottom: 0; }
+    .exp-header { margin-bottom: 8px; }
+    .exp-role { font-family: var(--font-heading); font-size: 16px; font-weight: 700; color: var(--dark); }
+    .exp-company { font-size: 14px; font-weight: 500; color: var(--primary); }
+    .exp-meta { font-size: 13px; color: var(--gray-400); margin-top: 2px; }
+    .exp-desc { font-size: 14px; color: var(--gray-600); line-height: 1.65; }
+    .exp-bullets { font-size: 14px; color: var(--gray-600); line-height: 1.65; padding-left: 20px; margin-top: 6px; }
+    .exp-bullets li { margin-bottom: 4px; }
+    .education-item, .cert-item, .lang-item { font-size: 15px; margin-bottom: 8px; }
+    .edu-degree, .cert-name { font-weight: 600; color: var(--dark); }
+    .edu-school { color: var(--primary); font-weight: 500; }
+    .edu-year { font-size: 13px; color: var(--gray-400); }
+    footer { background: var(--dark); padding: 32px 40px; text-align: center; position: relative; }
+    footer::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--highlight)); }
+    .footer-text { font-family: var(--font-heading); font-size: 14px; color: var(--gray-400); }
+    .footer-text strong { color: var(--white); }
+    .footer-text .accent { color: var(--highlight); }
+    .footer-sub { font-size: 12px; color: var(--gray-600); margin-top: 8px; }
+    @media (max-width: 640px) {
+      header, .candidate-banner, .resume-body, .back-link, footer { padding-left: 20px; padding-right: 20px; }
+      .skills-grid { grid-template-columns: 1fr; }
+      .candidate-contact { flex-direction: column; gap: 6px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="back-link"><a href="index.html">Back to All Candidates</a></div>
+  <header>
+    <div class="header-brand">Lowe's Guardian Angel<span>.</span></div>
+    <div class="header-subtitle">Candidate Resume</div>
+  </header>
+  <div class="candidate-banner">
+    <div class="candidate-name">Ailene A.</div>
+    <div class="candidate-title">Executive Operations Manager | Philippines</div>
+    <div class="candidate-contact">
+      <span>Philippines</span>
+      <span>5+ yrs Executive Admin experience</span>
+    </div>
+  </div>
+  <div class="resume-body">
+    <div class="section"><div class="section-title">Professional Summary</div><p class="summary-text">Versatile and results-driven operations professional with over 15 years of leadership experience across Quality, Operations, and strategic executive support. Proven track record in driving operational efficiency, leading cross-functional projects, and ensuring seamless execution of organizational priorities. AI-proficient, leveraging automation tools and data-driven systems to streamline workflows, enhance reporting accuracy, and improve decision-making. Recognized for strong problem-solving abilities, stakeholder communication, and delivering measurable results aligned with business objectives.</p></div>
+    <div class="section"><div class="section-title">Skills &amp; Tech Stack</div><div class="skills-grid">
+    <div class="skill-label">Core Skills</div>
+    <div class="skill-value">Executive Assistant, Operations Monitoring, Team Management, Complaint Handling, Problem Solving / Critical Thinking, Performance Improvement, Data Analytics, People Management</div>
+    <div class="skill-label">Tools Proficiency</div>
+    <div class="skill-value">Google Suite, Canva, Adobe, PandaDoc, Sharepoint, Dropbox, SalesForce, Hubspot, ChatGPT, Trello, Monday, Asana, Notion, AirTable, 2Talk, Clay, Front, Spark, Vimcal, Keap, AlayaCare, BambooHR, Indeed, OnlineJobsPH, NationBuilder, Raisely, Zapier, Microsoft Office, Attio, Ramp</div></div></div>
+    <div class="section"><div class="section-title">Work Experience</div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">FREELANCER PROJECT MANAGER / SUPERVISOR / EXECUTIVE ASSISTANT</div>
+        <div class="exp-company">Freelance</div>
+        <div class="exp-meta">October 2023 - February 2026</div>
+      </div>
+      <ul class="exp-bullets"><li>EA Manager / Project Manager</li><li>EA (Inbox, Calendar Management, Travel, Automation &amp; Workflow Creation)</li><li>Freelance Researcher</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">CLIENT SUCCESS MANAGER / OPERATIONS MANAGER / EXECUTIVE ASSISTANT</div>
+        <div class="exp-company">Athena Labs LLC</div>
+        <div class="exp-meta">July 2022 - July 2023</div>
+      </div>
+      <ul class="exp-bullets"><li>People, Performance, and Client Management</li><li>Email, Calendar, Travel, Research and Financial Management</li><li>CRM Management</li><li>Project Management</li><li>Data Management and Analysis</li><li>Customer Service and Escalations Handling</li><li>Core Groups / Projects:</li><li>Project Swat</li><li>Green Partnership</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">OPERATIONS MANAGER</div>
+        <div class="exp-company">Ibex Global Phil</div>
+        <div class="exp-meta">Sept 2020 - May 2022</div>
+      </div>
+      <ul class="exp-bullets"><li>People &amp; Performance Management</li><li>Core Groups / Projects (Recovery Team):</li><li>Ops Validation Lead</li><li>Handled &quot;red zone&quot; program 2020-2021</li><li>Asked to handle another &quot;red zone&quot; program 2021 - 2022</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">TEAM MANAGER</div>
+        <div class="exp-company">Ibex Global Phil</div>
+        <div class="exp-meta">Aug 2019 - Sept 2020</div>
+      </div>
+      <ul class="exp-bullets"><li>People &amp; Performance Management</li><li>Core Groups / Projects:</li><li>Customer Service</li><li>ABAY Core Group</li><li>Pandemic ABAY Lead</li><li>Escalations Team</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">OUTBOUND LEAD VERIFIER</div>
+        <div class="exp-company">BrokerMatch</div>
+        <div class="exp-meta">Mar 2019 - June 2019</div>
+      </div>
+      <ul class="exp-bullets"><li>information verifier</li><li>secure agreement to be called by lenders and to be offered cash assistance</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">OUTBOUND LEAD VERIFIER</div>
+        <div class="exp-company">EB5AN</div>
+        <div class="exp-meta">Jan 2019 - Feb 2019</div>
+      </div>
+      <p class="exp-desc">invite leads to attend seminar re: investment</p>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">ASSISTANT MANAGER</div>
+        <div class="exp-company">WNS Global Services</div>
+        <div class="exp-meta">Feb 2018 - Jan 2019</div>
+      </div>
+      <ul class="exp-bullets"><li>People &amp; Performance Management</li><li>Core Groups / Projects:</li><li>Inception Team</li><li>Claims Department</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">TEAM LEADER</div>
+        <div class="exp-company">Convergys Philippines</div>
+        <div class="exp-meta">Mar 2015 - Feb 2018</div>
+      </div>
+      <ul class="exp-bullets"><li>People &amp; Performance Management</li><li>Core Groups / Projects:</li><li>OM Validation</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">QUALITY SUPERVISOR</div>
+        <div class="exp-company">Convergys Philippines</div>
+        <div class="exp-meta">Dec 2012 - Mar 2015</div>
+      </div>
+      <ul class="exp-bullets"><li>Analyze results and trends on all quality metrics across account(s) and shares insights to Internal and External partners</li><li>Facilitates calibration sessions and QA talk, as needed</li><li>Core Groups / Projects:</li><li>New QA Form creation</li><li>Part of the top Quality Supervisor in 2014 which is responsible for creating a module or process to help onboard new Quality Evaluators and Supervisors</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">QUALITY EVALUATOR</div>
+        <div class="exp-company">Convergys Philippines</div>
+        <div class="exp-meta">Apr 2012 - Dec 2012</div>
+      </div>
+      <ul class="exp-bullets"><li>Evaluate calls and analyze results to be shared to Operations with recommended action plans</li><li>Sends observed behaviors or trends to agents</li><li>Core Groups / Projects:</li><li>assistant QA Supervisor</li><li>assists with the selection process for QA applicants</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">CUSTOMER SERVICE REPRESENTATIVE</div>
+        <div class="exp-company">Convergys Philippines</div>
+        <div class="exp-meta">Oct 2011 - Apr 2012</div>
+      </div>
+      <ul class="exp-bullets"><li>handles and resolves Telco related concerns</li><li>manages and investigates disputes</li></ul>
+    </div></div>
+    <div class="section"><div class="section-title">Education</div>
+    <div class="education-item">
+      <div class="edu-degree">BS IN COMPUTER SCIENCE</div>
+      <div class="edu-school">San Pedro College of Business Administration</div>
+      <div class="edu-year">2000-2004</div>
+    </div></div>
+    <div class="section"><div class="section-title">Certifications</div>
+    <div class="cert-item"><span class="cert-name">VP in Academic Affairs 2000-2003</span></div>
+    <div class="cert-item"><span class="cert-name">Student Body VP 2003-2004</span></div>
+    <div class="cert-item"><span class="cert-name">Dean's Award of Excellence</span></div>
+    <div class="cert-item"><span class="cert-name">Best in Thesis</span></div></div>
+    
+  </div>
+  <footer>
+    <div class="footer-text">Presented by <strong>Sagan</strong> for <strong class="accent">Lowe's Guardian Angel</strong></div>
+    <div class="footer-sub">getsagan.com · Redefining Recruitment</div>
+  </footer>
+</body>
+</html>
